@@ -36,6 +36,7 @@ function bubbleSort() {
     for (let i = 0; i < bArray.length; i += 1) {
       if (bArray[i] && bArray[i + 1] && bArray[i] > bArray[i + 1]) {
         swap(bArray, i, i + 1);
+        swapped = true;
       }
     }
   } while (swapped);
